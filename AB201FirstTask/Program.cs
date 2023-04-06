@@ -199,16 +199,16 @@
 //}
 
 
-Console.WriteLine(FullName("Hakim", 10));
+//Console.WriteLine(FullName("Hakim", 10));
 
-string FullName(string name, int age)
-{
-    if (age > 15)
-    {
-        return name + age;
-    }
-    return "age < 15";
-}
+//string FullName(string name, int age)
+//{
+//    if (age > 15)
+//    {
+//        return name + age;
+//    }
+//    return "age < 15";
+//}
 
 //Console.WriteLine(FullName("Hakim", 20));
 
@@ -230,5 +230,125 @@ string FullName(string name, int age)
 //    Console.WriteLine(age);
 //}
 
+
+#endregion
+
+
+#region Value & Reference types
+
+//int num1 = 5;
+
+//int num2 = num1;
+//num1 = 10;
+
+//Console.WriteLine($"num1={num1}");
+//Console.WriteLine($"num2={num2}");
+
+//int[] nums1 = { 1, 2, 3, 5, 6, 7 };
+//nums1[0] = 10;
+//int[] nums2 = nums1;
+
+//int[] nums3 = { 1, 2, 3, 4, 5, 6 };
+//Console.WriteLine(nums1[0]);
+//Console.WriteLine(nums2[0]);
+//Console.WriteLine(nums3[0]);
+
+//nums2[0] = 20;
+
+//Console.WriteLine(nums1[0]);
+//Console.WriteLine(nums2[0]);
+//Console.WriteLine(nums3[0]);
+
+
+//int num1 = 5;
+//Console.WriteLine(num1);
+//ChangeNum(num1);
+//Console.WriteLine("Outside " + num1);
+
+//void ChangeNum(int num)
+//{
+//    num = 200;
+//    Console.WriteLine("Method " + num);
+//}
+
+
+
+//int[] nums = { 5, 1, 5, 12 };//101
+//Console.WriteLine(nums[0]);
+//ChangeArray(nums);
+//Console.WriteLine(nums[0]);//101
+
+//void ChangeArray(int[] arr)//101
+//{
+//    arr[0] = 100;
+//    Console.WriteLine(arr[0]);
+//}
+
+//string FullName = Concat(fin:"1bhjghhg",name:"Eli");
+//Console.WriteLine(FullName);
+//string Concat(string name,string surname="hiu",string fin = "SSS")
+//{
+//    return name + " " + surname+" "+fin;
+//}
+//Console.WriteLine("Arrayin uzunlugunu daxil et");
+//int size=int.Parse(Console.ReadLine());
+
+//string numStr = "10";
+//int[] arr = new int[size];
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    Console.WriteLine($"{i+1}-ci Ededi daxil et:");
+//    arr[i] = int.Parse(Console.ReadLine());
+//}
+//Console.WriteLine("Netice");
+//PrintArrayElement("Eli", 15, 2, 3, 4, 5, 6);
+//int[] arr = { 1, 2, 3, };
+//PrintArrayElement(1, 2, 3, 4, 17, 26 );
+
+//void PrintArrayElement(string name,int age,params int[] arr)
+//{
+//	foreach (int num in arr)
+//	{
+//        Console.WriteLine(num);
+//    }
+//}
+
+
+
+
+
+
+using System;
+using System.Threading.Channels;
+
+namespace AB201FirstTask
+{
+    class Program
+    {
+        
+        static void Main(string[] args)
+        {
+            int num1 = int.Parse(Console.ReadLine());
+            int num2 = 10;
+            Console.WriteLine(num2/num1);
+
+        }
+
+        // static void Print(string str)
+        // {
+        //     Console.WriteLine(str);
+        // }
+        //static void Print(string str1,string str2,int years)
+        // {
+        //     Console.WriteLine(str1+" "+str2+" ");
+        // }
+        // static void Print(string str1, int str2,int age)
+        // {
+        //     Console.WriteLine(str1 + " " + str2+" "+age);
+        // }
+       
+         
+    }
+}
 
 #endregion
