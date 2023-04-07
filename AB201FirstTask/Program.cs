@@ -236,119 +236,193 @@
 
 #region Value & Reference types
 
-//int num1 = 5;
+////int num1 = 5;
 
-//int num2 = num1;
-//num1 = 10;
+////int num2 = num1;
+////num1 = 10;
 
-//Console.WriteLine($"num1={num1}");
-//Console.WriteLine($"num2={num2}");
+////Console.WriteLine($"num1={num1}");
+////Console.WriteLine($"num2={num2}");
 
-//int[] nums1 = { 1, 2, 3, 5, 6, 7 };
-//nums1[0] = 10;
-//int[] nums2 = nums1;
+////int[] nums1 = { 1, 2, 3, 5, 6, 7 };
+////nums1[0] = 10;
+////int[] nums2 = nums1;
 
-//int[] nums3 = { 1, 2, 3, 4, 5, 6 };
-//Console.WriteLine(nums1[0]);
-//Console.WriteLine(nums2[0]);
-//Console.WriteLine(nums3[0]);
+////int[] nums3 = { 1, 2, 3, 4, 5, 6 };
+////Console.WriteLine(nums1[0]);
+////Console.WriteLine(nums2[0]);
+////Console.WriteLine(nums3[0]);
 
-//nums2[0] = 20;
+////nums2[0] = 20;
 
-//Console.WriteLine(nums1[0]);
-//Console.WriteLine(nums2[0]);
-//Console.WriteLine(nums3[0]);
+////Console.WriteLine(nums1[0]);
+////Console.WriteLine(nums2[0]);
+////Console.WriteLine(nums3[0]);
 
 
-//int num1 = 5;
-//Console.WriteLine(num1);
-//ChangeNum(num1);
-//Console.WriteLine("Outside " + num1);
+////int num1 = 5;
+////Console.WriteLine(num1);
+////ChangeNum(num1);
+////Console.WriteLine("Outside " + num1);
 
-//void ChangeNum(int num)
+////void ChangeNum(int num)
+////{
+////    num = 200;
+////    Console.WriteLine("Method " + num);
+////}
+
+
+
+////int[] nums = { 5, 1, 5, 12 };//101
+////Console.WriteLine(nums[0]);
+////ChangeArray(nums);
+////Console.WriteLine(nums[0]);//101
+
+////void ChangeArray(int[] arr)//101
+////{
+////    arr[0] = 100;
+////    Console.WriteLine(arr[0]);
+////}
+
+////string FullName = Concat(fin:"1bhjghhg",name:"Eli");
+////Console.WriteLine(FullName);
+////string Concat(string name,string surname="hiu",string fin = "SSS")
+////{
+////    return name + " " + surname+" "+fin;
+////}
+////Console.WriteLine("Arrayin uzunlugunu daxil et");
+////int size=int.Parse(Console.ReadLine());
+
+////string numStr = "10";
+////int[] arr = new int[size];
+////for (int i = 0; i < arr.Length; i++)
+////{
+////    Console.WriteLine($"{i+1}-ci Ededi daxil et:");
+////    arr[i] = int.Parse(Console.ReadLine());
+////}
+////Console.WriteLine("Netice");
+////PrintArrayElement("Eli", 15, 2, 3, 4, 5, 6);
+////int[] arr = { 1, 2, 3, };
+////PrintArrayElement(1, 2, 3, 4, 17, 26 );
+
+////void PrintArrayElement(string name,int age,params int[] arr)
+////{
+////	foreach (int num in arr)
+////	{
+////        Console.WriteLine(num);
+////    }
+////}
+////int num = 1;
+////test(num);
+////Console.WriteLine(num);
+
+////void test(int num)
+////{
+////    num = 15;
+////    Console.WriteLine(num);
+////}
+
+////int[] arr = { 1, 2, 4, 5, 6, 7, };
+////Console.WriteLine(arr[0]);
+////test2(arr);
+////Console.WriteLine(arr[0]);
+
+////void test2(int[] arr)
+////{
+////    arr[0] = 15;
+////    Console.WriteLine(arr[0]);
+////}
+
+
+
+//using System;
+//using System.Threading.Channels;
+
+//namespace AB201FirstTask
 //{
-//    num = 200;
-//    Console.WriteLine("Method " + num);
-//}
+//    class Program
+//    {
+
+//        static void Main(string[] args)
+//        {
+//            //int num1 = int.Parse(Console.ReadLine());
+//            //int num2 = 10;
+//            //Console.WriteLine(num2 / num1);
 
 
 
-//int[] nums = { 5, 1, 5, 12 };//101
-//Console.WriteLine(nums[0]);
-//ChangeArray(nums);
-//Console.WriteLine(nums[0]);//101
+//            Print("Hikmet");
+//        }
 
-//void ChangeArray(int[] arr)//101
-//{
-//    arr[0] = 100;
-//    Console.WriteLine(arr[0]);
-//}
 
-//string FullName = Concat(fin:"1bhjghhg",name:"Eli");
-//Console.WriteLine(FullName);
-//string Concat(string name,string surname="hiu",string fin = "SSS")
-//{
-//    return name + " " + surname+" "+fin;
-//}
-//Console.WriteLine("Arrayin uzunlugunu daxil et");
-//int size=int.Parse(Console.ReadLine());
 
-//string numStr = "10";
-//int[] arr = new int[size];
-//for (int i = 0; i < arr.Length; i++)
-//{
-//    Console.WriteLine($"{i+1}-ci Ededi daxil et:");
-//    arr[i] = int.Parse(Console.ReadLine());
-//}
-//Console.WriteLine("Netice");
-//PrintArrayElement("Eli", 15, 2, 3, 4, 5, 6);
-//int[] arr = { 1, 2, 3, };
-//PrintArrayElement(1, 2, 3, 4, 17, 26 );
 
-//void PrintArrayElement(string name,int age,params int[] arr)
-//{
-//	foreach (int num in arr)
-//	{
-//        Console.WriteLine(num);
+
+
+//        //static void Print(params string[] arr)
+//        //{
+//        //    Console.WriteLine("Params Method");
+//        //}
+//        //static void Print(string str)
+//        //{
+//        //    Console.WriteLine("Sade Method");
+//        //}
+
+//        //static void Print(string str1, string str2 = "test")
+//        //{
+//        //    Console.WriteLine("default Method");
+//        //}
+
+
+
+//        // static void Print(string str)
+//        // {
+//        //     Console.WriteLine(str);
+//        // }
+//        //static void Print(string str1,string str2,int years)
+//        // {
+//        //     Console.WriteLine(str1+" "+str2+" ");
+//        // }
+//        // static void Print(string str1, int str2,int age)
+//        // {
+//        //     Console.WriteLine(str1 + " " + str2+" "+age);
+//        // }
+
+
 //    }
 //}
 
+#endregion
+
+#region Ref,Out
+
+
+//int num;
+//SetNumber(out num);
+//Console.WriteLine(num);
 
 
 
+//void SetNumber(ref int num)
+//{
+//    num = 10;
+//    Console.WriteLine(num);
+//}
 
+#endregion
 
-using System;
-using System.Threading.Channels;
+#region Recursive Method-> Factorial
 
-namespace AB201FirstTask
-{
-    class Program
-    {
-        
-        static void Main(string[] args)
-        {
-            int num1 = int.Parse(Console.ReadLine());
-            int num2 = 10;
-            Console.WriteLine(num2/num1);
-
-        }
-
-        // static void Print(string str)
-        // {
-        //     Console.WriteLine(str);
-        // }
-        //static void Print(string str1,string str2,int years)
-        // {
-        //     Console.WriteLine(str1+" "+str2+" ");
-        // }
-        // static void Print(string str1, int str2,int age)
-        // {
-        //     Console.WriteLine(str1 + " " + str2+" "+age);
-        // }
-       
-         
-    }
-}
-
+//int result = GetFactorial(6);
+//Console.WriteLine(result);
+////(6*5*4*3*2*1)
+//int GetFactorial(int num)
+//{
+//    if (num <= 1)
+//    {
+//        return 1;
+//    }
+//    int result1 = num * GetFactorial(num - 1);
+//    return result;
+//}
 #endregion

@@ -9,11 +9,21 @@ namespace AB201FirstTask
     //Method signature-> Method's name,method's paramters' count,method's parametr's type
     internal class human
     {
-       public void Eat()
+        public human()
+        {
+            Eat2(18,"Muslum","Hikmet");
+        }
+        public void Eat1(string name,string surname,string father)
         {
             Console.WriteLine("Eat apple");
         }
-        
-       
+
+
+        public void Eat2(int age,string name,params string[] names)
+        {
+            Console.WriteLine("Eat apple");
+        }
+
+
     }
 }

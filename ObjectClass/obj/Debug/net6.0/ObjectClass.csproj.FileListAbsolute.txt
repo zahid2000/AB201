@@ -1,0 +1,15 @@
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\bin\Debug\net6.0\ObjectClass.exe
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\bin\Debug\net6.0\ObjectClass.deps.json
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\bin\Debug\net6.0\ObjectClass.runtimeconfig.json
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\bin\Debug\net6.0\ObjectClass.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\bin\Debug\net6.0\ObjectClass.pdb
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\refint\ObjectClass.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.pdb
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ObjectClass.genruntimeconfig.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\ObjectClass\obj\Debug\net6.0\ref\ObjectClass.dll
