@@ -102,12 +102,12 @@ string name = "1Hello Worldo salam dunya Ab201";
 
 //Console.WriteLine(name.Length);
 //Console.WriteLine(name.Trim().Length);
-string[] arr = name.Split(' ');
+//string[] arr = name.Split(' ');
 
-foreach (string s in arr)
-{
-    Console.WriteLine(s);
-}
+//foreach (string s in arr)
+//{
+//    Console.WriteLine(s);
+//}
 
 
 //string[] nums = { "salam","Hello","World"};
