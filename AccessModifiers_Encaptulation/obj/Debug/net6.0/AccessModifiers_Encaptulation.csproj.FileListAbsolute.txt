@@ -1,0 +1,15 @@
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\AccessModifiers_Encaptulation.exe
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\AccessModifiers_Encaptulation.deps.json
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\AccessModifiers_Encaptulation.runtimeconfig.json
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\AccessModifiers_Encaptulation.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\AccessModifiers_Encaptulation.pdb
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.AssemblyInfoInputs.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.AssemblyInfo.cs
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\refint\AccessModifiers_Encaptulation.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.pdb
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.genruntimeconfig.cache
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\ref\AccessModifiers_Encaptulation.dll

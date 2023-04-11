@@ -88,6 +88,9 @@
 //class Person
 //{
 //}
+using System.Collections.Immutable;
+using System.Text.RegularExpressions;
+
 string name = "1Hello Worldo salam dunya Ab201";
 //Console.WriteLine(name);
 //Console.WriteLine(name.EndsWith("Hello"));
@@ -108,7 +111,6 @@ string name = "1Hello Worldo salam dunya Ab201";
 //{
 //    Console.WriteLine(s);
 //}
-
 
 //string[] nums = { "salam","Hello","World"};
 //Console.WriteLine(string.Join('-',nums,1,2));
@@ -138,3 +140,88 @@ string name = "1Hello Worldo salam dunya Ab201";
 //{
 //    Console.WriteLine("Yoxdur");
 //}
+
+//1,2,3,
+//4,5,6
+#region Array
+
+//1,2,3,4,5,6,7,8,9,10
+//int[,,] arr = { { { 1,2 },{ 3,4} },
+//    { { 5,6},{7,8 } } };
+//Console.WriteLine(arr[0, 1, 1]);
+//foreach (int item in arr)
+//{
+//    Console.WriteLine(item);
+//}
+//Array.Resize(ref arr, arr.Length + 5);
+//Resize(ref arr, arr.Length + 5);
+//int num1 = 5;
+//int num2 = 10;
+//num1 = num2;
+//void Resize(ref int[] arr,int length)
+//{
+//    int[] ints = new int[length];
+//	for (int i = 0; i < arr.Length; i++)
+//	{
+//		ints[i] = arr[i];
+//	}
+//	arr= ints;
+//}
+
+
+//int[] arr = { 3, 1, 2, 5, 4, 15, 8 };
+//////var newArr = arr.Clone();
+//////Console.WriteLine(ReferenceEquals(newArr,arr));
+
+//int[] newArr = new int[arr.Length + 5];
+//arr.CopyTo(newArr, 3);
+
+//foreach (var item in (int[])newArr)
+//{
+//    Console.WriteLine(item);
+//}
+
+//var newArr=arr.Reverse();
+//Console.WriteLine("Nizamsiz");
+//foreach (int i in newArr)
+//{
+//    Console.WriteLine(i);
+//}
+
+//Array.Sort(arr);
+// newArr = arr.Reverse();
+//Console.WriteLine("Nizamli");
+//foreach (int i in newArr)
+//{
+//    Console.WriteLine(i);
+//}
+
+#endregion
+
+#region Regex
+string pattern = @"^\+[1-9]{1,3}[1-9]{1}[0-9]{1}[1-9]{1}[0-9]{6}$";
+string pattern2 = @"\d";
+//Regex regex = new Regex(pattern);
+////Console.WriteLine("Object method "+regex.IsMatch("+99470569637345"));
+//Console.WriteLine(Regex.IsMatch("+994705696373",pattern));
+//Regex regex= new Regex(pattern2);
+//string result = regex.Replace("+994705696373 jnhjbvhgvj njknknkjnbkjy7698 nhjkb989089nn,ui7y978y", "*");
+////Console.WriteLine(result);
+//string inp = "+994705696373 jnhjbvhgvj njknknkjnbkjy7698 nhjkb989089nn,ui7y978y";
+//Console.WriteLine(Regex.Replace(inp, pattern2, "$")); ;
+//string pattern3 = @"[,_-]";
+//string inp = "Hikmet Muslum Melek,Eli_Hakim-Shahin";
+////Regex regexSplit=new Regex(pattern3);
+////string[] result = regexSplit.Split(inp);
+
+
+
+
+//string[] result = Regex.Split(inp,pattern3);
+//foreach (var item in result)
+//{
+//    Console.WriteLine(item);
+//}
+
+
+#endregion
