@@ -1,13 +1,19 @@
-﻿namespace AccessModifiers_Encaptulation.Models;
+﻿using System.Reflection;
+
+namespace AccessModifiers_Encaptulation.Models;
 
 internal class Car:Vehicle
 {
     private double _speed;
     private int _ProductYear;
-    public int ProductYear { get;private set; }
+    public int ProductYear { get; } = 40;
     public Car()
     {
-        ProductYear = 2000;
+        ProductYear = 50;
+    }
+    public void Test()
+    {
+        ProductYear = 50;
     }
     public double Speed { 
         get {

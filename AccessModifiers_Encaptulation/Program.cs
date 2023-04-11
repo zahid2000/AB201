@@ -27,7 +27,7 @@ Car car=new Car();
 //double speed=car.GetSpeed();
 //Console.WriteLine(speed);
 car.Speed = -20;
-//car.ProductYear = 1995;
+car.ProductYear = 1995;
 Console.WriteLine(car.ProductYear);
 
 #endregion
