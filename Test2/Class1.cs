@@ -1,14 +1,16 @@
-﻿using AccessModifiers_Encaptulation.Models;
-
+﻿
 namespace Test2
 {
-    public class Class1:Vehicle
+    public class Class1
     {
-        //public Class1()
-        //{
-        //    Model = "X6";
-        //    Run();
-        //    Color = "Blue";
-        //}
+        public static void WriteHello()
+        {
+            Console.WriteLine("Hello World");
+        }
+        public string GetHello()
+        {
+            return "Hello World";
+        }
     }
+
 }

@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "AccessModifiers_Encaptulation/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/AccessModifiers_Encaptulation.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/AccessModifiers_Encaptulation.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "AccessModifiers_Encaptulation/1.0.0": {
-      "type": "project",
-      "path": "../AccessModifiers_Encaptulation/AccessModifiers_Encaptulation.csproj",
-      "msbuildProject": "../AccessModifiers_Encaptulation/AccessModifiers_Encaptulation.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net6.0": [
-      "AccessModifiers_Encaptulation >= 1.0.0"
-    ]
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\lenovo\\.nuget\\packages\\": {},
@@ -58,11 +39,7 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\AccessModifiers_Encaptulation\\AccessModifiers_Encaptulation.csproj": {
-              "projectPath": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\AccessModifiers_Encaptulation\\AccessModifiers_Encaptulation.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

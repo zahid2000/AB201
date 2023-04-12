@@ -6,14 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "AccessModifiers_Encaptulation/1.0.0": {
-        "dependencies": {
-          "Test2": "1.0.0"
-        },
-        "runtime": {
-          "AccessModifiers_Encaptulation.dll": {}
-        }
-      },
       "Test2/1.0.0": {
         "runtime": {
           "Test2.dll": {}
@@ -22,11 +14,6 @@
     }
   },
   "libraries": {
-    "AccessModifiers_Encaptulation/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Test2/1.0.0": {
       "type": "project",
       "serviceable": false,

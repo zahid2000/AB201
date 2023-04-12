@@ -4,17 +4,16 @@ namespace AccessModifiers_Encaptulation.Models;
 
 internal class Car:Vehicle
 {
+    
     private double _speed;
     private int _ProductYear;
+
+    public Car(double engine) : base(engine)
+    {
+    }
+
     public int ProductYear { get; } = 40;
-    public Car()
-    {
-        ProductYear = 50;
-    }
-    public void Test()
-    {
-        ProductYear = 50;
-    }
+   
     public double Speed { 
         get {
 

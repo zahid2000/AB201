@@ -6,10 +6,11 @@ public class Vehicle
     public string Model;
     public double Price;
     protected string _color;
-    private double _engine;
-    public Vehicle()
+    public double _engine;
+  
+    public Vehicle(double engine)
     {
-        _engine = 0;
+        _engine=engine;
     }
     public void Run()
     {

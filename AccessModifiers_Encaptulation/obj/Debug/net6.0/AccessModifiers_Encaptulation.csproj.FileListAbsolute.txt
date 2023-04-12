@@ -13,3 +13,6 @@ C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\ob
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.pdb
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.genruntimeconfig.cache
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\ref\AccessModifiers_Encaptulation.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\Test2.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\bin\Debug\net6.0\Test2.pdb
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\AccessModifiers_Encaptulation\obj\Debug\net6.0\AccessModifiers_Encaptulation.csproj.CopyComplete

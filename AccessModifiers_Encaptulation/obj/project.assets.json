@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Test2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Test2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Test2.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Test2/1.0.0": {
+      "type": "project",
+      "path": "../Test2/Test2.csproj",
+      "msbuildProject": "../Test2/Test2.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Test2 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\lenovo\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\Test2\\Test2.csproj": {
+              "projectPath": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\Test2\\Test2.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AccessModifiers_Encaptulation\AccessModifiers_Encaptulation.csproj" />
-  </ItemGroup>
-
 </Project>
