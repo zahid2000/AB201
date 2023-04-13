@@ -88,7 +88,9 @@
 //class Person
 //{
 //}
+using String_StringBuilder_Array;
 using System.Collections.Immutable;
+using System.Globalization;
 using System.Text.RegularExpressions;
 
 string name = "1Hello Worldo salam dunya Ab201";
@@ -224,4 +226,19 @@ string pattern2 = @"\d";
 //}
 
 
+#endregion
+
+
+#region Tuple
+//Person person=new Person()
+//{
+//    Name="Murad",
+//    Surname="Mecidov",
+//    Age=21
+//};
+
+//var info = person.GetInfo();
+//Console.WriteLine(info.Item2);
+//Console.WriteLine(info.Surname);
+//Console.WriteLine(info.Age);
 #endregion

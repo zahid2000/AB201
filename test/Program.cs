@@ -12,4 +12,28 @@
             return num1 + num2;
         }
     }
+   abstract class Animal
+    {
+      public  abstract void Eat();
+    }
+
+abstract  class Bird : Animal
+    {
+        public abstract void Fly();
+    }
+
+    class Eagle : Bird
+    {
+        public override void Eat()
+        {
+            Console.WriteLine("Eat as Eagle");
+        }
+
+        public override void Fly()
+        {
+            Console.WriteLine("Fly as Eagle");
+        }
+    }
+
+
 }
