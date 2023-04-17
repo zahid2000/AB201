@@ -58,6 +58,38 @@
             //redableStuden.Read();
             #endregion
 
+            #region static
+
+            //Person person = new Person();
+            //person.Group = 20;
+            //Person.Name = "Test";
+            //Person person1 = new Person();
+            //Console.WriteLine(Person.Name);
+            //Console.WriteLine(person.Group);
+            //Console.WriteLine(person1.Group);
+            //Console.WriteLine(Person.Name);\
+            //Person.Name = "Hakim";
+            //Person person = new Person();
+            //Console.WriteLine(Person.GetName()); ;
+            //Person person = new Person();
+            //Console.WriteLine($"Id1 {person.Id}");
+            //Console.WriteLine(Person.count);
+            //Person  person1 = new Person();
+            //Console.WriteLine($"Id2 {person1.Id}");
+            //Console.WriteLine(Person.count);
+            //Person person2 = new Person();
+            //Console.WriteLine($"Id3 {person2.Id}");
+            //Console.WriteLine(Person.count);
+            //Console.WriteLine(Person.count);
+            //Person person1 = new Person();
+            //Person person2 = new Person();
+            //Person person3 = new Person();
+            Student.Name = "Eli";
+            Console.WriteLine(Student.Name);
+            string a = "Eli";
+            a.Reverse();
+            #endregion
+
 
 
 
@@ -229,41 +261,69 @@
     //}
     #endregion
     #region Sealed
-  //abstract  class Person
-  //  {
-  //      public abstract void Eat();
-  //  }
-  //  class Student:Person
-  //  {
-  //      public override void Eat()
-  //      {
-  //          Console.WriteLine("Eat As Student");
-  //      }
+    //abstract  class Person
+    //  {
+    //      public abstract void Eat();
+    //  }
+    //  class Student:Person
+    //  {
+    //      public override void Eat()
+    //      {
+    //          Console.WriteLine("Eat As Student");
+    //      }
 
-  //      public virtual void Knowledge()
-  //      {
-  //          Console.WriteLine("Riyaziyyat");
-  //      }
-  //  }
-  //sealed  class Developer : Student
-  //  {
+    //      public virtual void Knowledge()
+    //      {
+    //          Console.WriteLine("Riyaziyyat");
+    //      }
+    //  }
+    //sealed  class Developer : Student
+    //  {
 
-  //      public sealed  override void Knowledge()
-  //      {
-  //          Console.WriteLine("C#,js,HTML,CSS");
-  //      }
-  //      public  override void Eat()
-  //      {
-  //          throw new NotImplementedException();
-  //      }
-  //  }
+    //      public sealed  override void Knowledge()
+    //      {
+    //          Console.WriteLine("C#,js,HTML,CSS");
+    //      }
+    //      public  override void Eat()
+    //      {
+    //          throw new NotImplementedException();
+    //      }
+    //  }
 
-  //  class Backend:Developer
-  //  {
-  //  }
-  //  class Frontend:Developer
-  //  {
+    //  class Backend:Developer
+    //  {
+    //  }
+    //  class Frontend:Developer
+    //  {
 
-  //  }
+    //  }
+    #endregion
+
+
+    #region Static
+    class Person {
+        //static Person()
+        //{
+        //    count++;
+        //}
+
+        public int Id;
+        public  string Name;
+        public int Group;
+        public static int count;
+        
+        //public static  string GetName()
+        //{
+        //    return Name;
+        //}
+    }
+    static class Student
+    {
+        static Student()
+        {
+            Console.WriteLine("Student Created");
+        }
+        public static string Name { get; set; }
+    }
     #endregion
 }
