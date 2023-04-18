@@ -1,4 +1,8 @@
-﻿namespace Polimorophism_Abstraction
+﻿using Polimorophism_Abstraction.Models;
+using System.Net;
+using System.Runtime.InteropServices;
+
+namespace Polimorophism_Abstraction
 {
     internal class Program
     {
@@ -57,7 +61,6 @@
             //ISum sum = redableStuden;           
             //redableStuden.Read();
             #endregion
-
             #region static
 
             //Person person = new Person();
@@ -84,17 +87,105 @@
             //Person person1 = new Person();
             //Person person2 = new Person();
             //Person person3 = new Person();
-            Student.Name = "Eli";
-            Console.WriteLine(Student.Name);
-            string a = "Eli";
-            a.Reverse();
+            //Student.Name = "Eli";
+            //Console.WriteLine(Student.Name);
+            //string a = "Eli";
+            //a.Reverse();
+            #endregion
+
+            #region Extension
+            //int num = 5;
+            //int num2 = num.Pow(3);
+            //Console.WriteLine(num2.Pow());
+            //string name = "Hakim";
+            //Console.WriteLine(name.MyReverse());
+
+
+
+            // Test test = new Test();
+            //Test test1=test.WriteHello(5);
+            // test1.Hello();
+            #endregion
+
+            #region Nullable value type
+            //WriteConsole(null);
+
+            //int? n = null;
+            //double? d = null;
+            //d = 5;
+            //d = null;
+            //string name =""
+            #endregion
+
+            #region Enum
+            //Person person = new Person();
+            //person.School = Schools.PrimarySchool;
+            //int num = 5;
+            //if (person.School==Schools.HighSchool)
+            //{
+            //    Console.WriteLine("High");
+            //}else if (person.School == Schools.PrimarySchool)
+            //{
+            //    Console.WriteLine("Primary");
+            //}
+            //else if (person.School == Schools.University)
+            //{
+            //    Console.WriteLine("University");
+            //}
+            //switch (num)
+            //{
+            //    case (int)Schools.University:
+            //        Console.WriteLine("University");
+            //        break;
+            //    case (int)Schools.PrimarySchool:
+            //        Console.WriteLine("Primary");
+            //        break;
+
+            //}
+
+            //Console.WriteLine(Schools.HighSchool);
+
+            //string[] names = Enum.GetNames(typeof(Schools));
+            //foreach (string name in names)
+            //{
+            //    Console.WriteLine(name);
+            //}
+            //Console.WriteLine(typeof(string));
+
+            #endregion
+            #region Indexer
+            //string name = "Chandar";
+            //Console.WriteLine(name[0]);
+            Book book = new Book() { 
+            Id=1,
+            Name="Sefiller"
+            };
+            Library library = new Library(20);
+            library[0]=book;
+            library[1]=new Book() { Name="Deli Kur"};
+            Console.WriteLine(library[1].Name);
             #endregion
 
 
-
-
         }
+        #region Nullable Value Type
+        //public static void WriteConsole(int? num)
+        //{
+        //    if (num is null)
+        //    {
+        //        Console.WriteLine("Null");
+        //        return;
+        //    }
+        //    Console.WriteLine(num);
+        //}
+
+        //public static int? GetNum(int id)
+        //{
+        //    return null;
+        //}
+        #endregion
     }
+
     #region Abstract class
 
     //abstract class Animal
@@ -299,31 +390,38 @@
     //  }
     #endregion
 
+    #region enum
+   //public enum Schools
+   // {
+   //     PrimarySchool=5, University=51,HighSchool = 100
+   // }
+    #endregion
+
 
     #region Static
-    class Person {
-        //static Person()
-        //{
-        //    count++;
-        //}
+    //class Person {
+    //    //static Person()
+    //    //{
+    //    //    count++;
+    //    //}
 
-        public int Id;
-        public  string Name;
-        public int Group;
-        public static int count;
-        
-        //public static  string GetName()
-        //{
-        //    return Name;
-        //}
-    }
-    static class Student
-    {
-        static Student()
-        {
-            Console.WriteLine("Student Created");
-        }
-        public static string Name { get; set; }
-    }
+    //    public int Id;
+    //    public  string Name;
+    //    public int Group;
+    //    public static int count;
+
+    //    //public static  string GetName()
+    //    //{
+    //    //    return Name;
+    //    //}
+    //}
+    //static class Student
+    //{
+    //    static Student()
+    //    {
+    //        Console.WriteLine("Student Created");
+    //    }
+    //    public static string Name { get; set; }
+    //}
     #endregion
 }

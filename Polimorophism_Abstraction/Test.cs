@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Polimorophism_Abstraction
 {
-    internal class Test
+    public class Test
     {
        
         public void  Hello()
