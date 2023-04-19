@@ -156,17 +156,39 @@ namespace Polimorophism_Abstraction
             #region Indexer
             //string name = "Chandar";
             //Console.WriteLine(name[0]);
-            Book book = new Book() { 
-            Id=1,
-            Name="Sefiller"
-            };
-            Library library = new Library(20);
-            library[0]=book;
-            library[1]=new Book() { Name="Deli Kur"};
-            Console.WriteLine(library[1].Name);
+            //Book book = new Book()
+            //{
+            //    Id = 1,
+            //    Name = "Sefiller"
+            //};
+            //Library library = new Library(20);
+            //library.Names[0] = "bnhbhjbj";
+            //library[0] = book;
+            //library[1] = new Book() { Name = "Deli Kur" };
+            //Console.WriteLine(library[1].Name);
             #endregion
 
+            #region Struct
+            int a;
+            string name = "vbgh";
+            str
+                str
 
+            a = 5;
+               TestStruct test=
+            test.Id = 5;
+            test.name = "hjbj";
+            //test.Name = 5;
+            //test.id = 10;
+            //test.Name = 20;
+            //test.GetName();
+            //Console.WriteLine(test.id);
+            //int a;
+            //a = 5;
+
+
+
+            #endregion
         }
         #region Nullable Value Type
         //public static void WriteConsole(int? num)
@@ -262,7 +284,6 @@ namespace Polimorophism_Abstraction
     //    }
     //}
     #endregion
-
     #region Interface
     //abstract class BaseArithmetich
     //{
@@ -389,15 +410,12 @@ namespace Polimorophism_Abstraction
 
     //  }
     #endregion
-
     #region enum
-   //public enum Schools
-   // {
-   //     PrimarySchool=5, University=51,HighSchool = 100
-   // }
+    //public enum Schools
+    // {
+    //     PrimarySchool=5, University=51,HighSchool = 100
+    // }
     #endregion
-
-
     #region Static
     //class Person {
     //    //static Person()
@@ -424,4 +442,25 @@ namespace Polimorophism_Abstraction
     //    public static string Name { get; set; }
     //}
     #endregion
+    #region Struct
+
+    struct TestStruct
+    {
+      
+        public TestStruct(int id,int count)
+        {
+            Count = count;
+
+            Id = id;
+        }
+        public int Count { get; set; }
+        public int Id;
+        public string name { get; set; }
+        public void GetName()
+        {
+            Console.WriteLine(Name);
+        }
+    }
+    #endregion
+
 }

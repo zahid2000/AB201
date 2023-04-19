@@ -10,6 +10,7 @@ public class Person
     //}
     //public string Name { get; set; }
     //public Schools School { get; set; }
+    public int id { get; set; }
     public MyEnum MyProperty { get; set; }
 
 }

@@ -3,6 +3,7 @@
 public class Library
 {
     private Book[] _books;
+    public string[] Names;
     public Library(int size)
     {
         _books = new Book[size];
@@ -23,5 +24,5 @@ public class Library
             }
         }
     }
-        
+   
 }
