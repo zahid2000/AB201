@@ -1,10 +1,12 @@
-﻿using Exception_Reflection.Utilities.Exceptions;
-using System.Xml.Linq;
+﻿using Exception_Reflection.Models;
+using System.Reflection;
 
 namespace Exception_Reflection
 {
+    
     internal class Program
     {
+        int a = 5;
         static void Main(string[] args)
         {
             #region Exception
@@ -77,39 +79,105 @@ namespace Exception_Reflection
             //    //    }
             //    //    throw new Exception("Name is not valid");
             //    //} 
+            //    string name=Console.ReadLine();
+
+            //    string[] Array = new string[4];
+
+
+            //    try
+            //    {
+            //        AddToArray(Array, name);
+            //    }
+            //    catch (Exception Exc) 
+            //    {
+
+            //        Console.WriteLine(Exc.Message);
+            //    }
+            //}
+
+            // static void AddToArray(string[] array,string name)
+            //{
+            //    for (int i = 0; i < name.Length; i++)
+            //    {
+            //        if (char.IsDigit(name[i]))
+            //        {
+            //            throw new MyException("Wrong name");
+            //        }
+
+
+            //    }
+            //        Console.WriteLine("true name");
+
+            //}
+
+            //Person person = new Person();
+            ////person.GetException();
+            //Person.GetException();
             #endregion
-            string name=Console.ReadLine();
+            #region Reflection
+            //Assembly assembly = Assembly.GetExecutingAssembly();
+            //Type[] types=assembly.GetTypes();
+            //foreach (Type   type in types)
+            //{
+            //    //Console.WriteLine($"{type.Namespace}->{type.Name}");
+            //    Console.WriteLine(type.FullName);
+            //    //PropertyInfo[] props=type.GetProperties();
+            //    //foreach (PropertyInfo prop in props)
+            //    //{
+            //    //    Console.WriteLine(prop.Name);
+            //    //}
+            //    //MethodInfo[] methods=type.GetMethods();
+            //    //foreach (MethodInfo method in methods)
+            //    //{
+            //    //    Console.WriteLine(method.Name);
+            //    //
+            //    //var fields=type.GetFields(BindingFlags.Static|BindingFlags.NonPublic);
+            //    //foreach (FieldInfo field in fields)
+            //    //{
+            //    //    Console.WriteLine(field.Name);
+            //    //}
+            //    Console.WriteLine("============================================");
+            //}
 
-            string[] Array = new string[4];
-            
+            //Type type = Type.GetType("Exception_Reflection.Models.Person");
 
-            try
-            {
-                AddToArray(Array, name);
-            }
-            catch (Exception Exc) 
-            {
+            //Person person = new Person();
+            //Type type=person.GetType();
+            Type type = typeof(Person);
 
-                Console.WriteLine(Exc.Message);
-            }
+
+            //PropertyInfo[] properties = type.GetProperties(BindingFlags.Instance | BindingFlags.NonPublic );
+            //foreach (PropertyInfo property in properties)
+            //{
+            //    Console.WriteLine(property.Name);
+            //}
+
+            //object created
+            //Person person = new Person();
+            Person person = (Person)Activator.CreateInstance(typeof(Person));
+            //Person person = (Person)Assembly.GetExecutingAssembly().CreateInstance(typeof(Person).ToString());
+            //PropertyInfo propId = type.GetProperty("Id", BindingFlags.Instance | BindingFlags.NonPublic );
+            //PropertyInfo propName = type.GetProperty("Name", BindingFlags.Instance | BindingFlags.Public);
+            //Console.WriteLine(propId.Name);
+            //propId.SetValue(person, 5);
+            //propName.SetValue(person, "Hakim");
+            //Console.WriteLine(propId.GetValue(person));
+            //Console.WriteLine(propName.GetValue(person));
+            //PropertyInfo propCount= type.GetProperty("Count");
+            //propCount.SetValue(null, 25);
+            //Console.WriteLine(propCount.GetValue(null));
+            //PropertyInfo propName = type.GetProperty("Name");
+            //PropertyInfo propSurname = type.GetProperty("Surname");
+            //propName.SetValue(person, "Murad");
+            //propSurname.SetValue(person, "Eliyev");
+            //MethodInfo methodGet = type.GetMethod("GetFullName");
+            //methodGet.Invoke(person, null);
+
+            MethodInfo methodGet = type.GetMethod("GetMessage");
+            methodGet.Invoke(person,new object[] { "Salam AB201",5});
+            #endregion
+
+
         }
-
-         static void AddToArray(string[] array,string name)
-        {
-            for (int i = 0; i < name.Length; i++)
-            {
-                if (char.IsDigit(name[i]))
-                {
-                    throw new MyException("Wrong name");
-                }
-                    
-
-            }
-                Console.WriteLine("true name");
-
-        }
-
-
-
     }
 }
