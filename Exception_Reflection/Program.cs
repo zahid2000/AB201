@@ -177,7 +177,15 @@ namespace Exception_Reflection
             methodGet.Invoke(person,new object[] { "Salam AB201",5});
             #endregion
 
-
         }
+    }
+
+     class Test
+    {
+       public static int abh;
+    }
+     class Test1:Test
+    {
+
     }
 }
