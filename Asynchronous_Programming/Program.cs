@@ -100,17 +100,11 @@ void Loop3()
 //            result += i;
 //        }
 
-        
-//    });
-   
+
+//    });  
 
 //    return result;
 //}
-
-
-
-
-
 //string[] urls = new string[]
 //{
 //    "https://docs.microsoft.com",
@@ -128,21 +122,21 @@ void Loop3()
 //};
 
 
-////GetHttpContent(urls);
-//async void GetHttpContent(string[] urls)
+//GetHttpContent(urls);
+// void GetHttpContent(string[] urls)
 //{
 //    HttpClient httpClient = new HttpClient();
 //    Stopwatch sw = new Stopwatch();
 //    sw.Start();
 //    foreach (var url in urls)
 //    {
-//        var result =  httpClient.GetStringAsync(url).Result;
-//        Console.WriteLine(result.Length);       
+//        var result = httpClient.GetStringAsync(url);
+//        Console.WriteLine(result);
+//        break;
 //    }
 //    sw.Stop();
 //    Console.WriteLine($"{sw.ElapsedMilliseconds} ms");
 //}
-
 
 //await GetHttpContentAsync(urls);
 //async Task GetHttpContentAsync(string[] urls)
@@ -164,7 +158,7 @@ void Loop3()
 //    sw.Stop();
 
 //    Console.WriteLine($"{sw.ElapsedMilliseconds} ms");
-   
+
 //}
 
 //get();
