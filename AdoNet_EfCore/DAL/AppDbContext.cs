@@ -12,5 +12,5 @@ public class AppDbContext:DbContext
         base.OnConfiguring(optionsBuilder);
     }
 
- 
+    public DbSet<Person> Persons { get; set; }
 }
