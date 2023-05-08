@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebFirstApp/1.0.0": {
+        "runtime": {
+          "WebFirstApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebFirstApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

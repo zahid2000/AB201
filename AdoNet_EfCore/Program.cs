@@ -6,8 +6,8 @@ using System.Data.SqlClient;
 
 //GetName(4);
 //InsertStudent("Muslum", "Misirli");
-//GetAllStudents();
-//Console.ReadLine();
+GetAllStudents();
+Console.ReadLine();
 async void GetName(int id)
 {
     using (SqlConnection conn = new SqlConnection(Urls.connectionString))

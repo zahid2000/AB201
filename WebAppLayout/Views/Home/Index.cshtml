@@ -1,0 +1,57 @@
+﻿
+@*@model (List<Student>Students, string[] Groups)*@
+@model HomeVM
+
+@{
+    //string name = "Eli";
+    //int num = 5;
+    //string[] names = { "Esli", "Murad1", "Murad2", "Malak", "Benovshe", "Senan" };
+    string name = ViewBag.Name;
+    string name1 = (string)ViewData["Name"];
+}
+
+
+
+@*@foreach (Student student in (List<Student>)TempData["Students"])
+{
+    <p>@student.Id @student.Name @student.Surname </p>
+}*@
+<ol type="a">
+@foreach (Student student in Model.Students)
+{
+    <li>@student.Id @student.Name @student.Surname </li>
+}
+</ol>
+@foreach (string group in Model.Groups)
+{
+    <h2>@group  </h2>
+}
+
+
+
+@*<h1>@ViewBag.Name</h1>*@
+@*<h1>@ViewData["Name"]</h1>
+<h1>@TempData["Surname"]</h1>*@
+
+
+@*
+@if (num==1)
+{
+    <h2>Ok</h2>
+}
+else
+{
+    num++;
+    <h2>@num</h2>
+}
+<ul>
+
+
+@foreach (string item in names)
+{
+   <li>@item</li> 
+}
+
+
+</ul>*@
+
