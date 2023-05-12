@@ -24,7 +24,7 @@
                     </thead>
                     <tbody>
 
-                        @foreach (var item in Model)
+                        @foreach (Category item in Model)
                         {
                             <tr>
                                 <td> @count</td>
@@ -33,9 +33,9 @@
                                     @item.Name
                                 </td>
                                 <td>
-                                    <button type="button" class="btn btn-primary text-light">Detail</button>
-                                    <button type="button" class="btn btn-warning text-light">Update</button>
-                                    <button type="button" class="btn btn-danger text-light">Delete</button>
+                                    <a  class="btn btn-primary text-light">Detail</a>
+                                    <a  class="btn btn-warning text-light" asp-area="Admin" asp-controller="Category" asp-action="Update" asp-route-Id="@item.Id">Update</a>
+                                    <a  class="btn btn-danger text-light" asp-area="Admin" asp-controller="Category" asp-action="Delete"  asp-route-Id="@item.Id">Delete</a>
                                 </td>
                                 </tr>
                                 count++;

@@ -13,4 +13,5 @@ public class AppDbContext:DbContext
     public DbSet<Category> Categories { get; set; }
     public DbSet<Service> Services { get; set; }
     public DbSet<ServiceImage> ServiceImages { get; set; }
+
 }
