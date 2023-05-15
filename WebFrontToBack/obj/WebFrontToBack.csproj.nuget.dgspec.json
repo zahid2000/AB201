@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/narmin/Documents/AB201/WebFrontToBack/WebFrontToBack.csproj": {}
+    "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\WebFrontToBack.csproj": {}
   },
   "projects": {
-    "/Users/narmin/Documents/AB201/WebFrontToBack/WebFrontToBack.csproj": {
+    "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\WebFrontToBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/narmin/Documents/AB201/WebFrontToBack/WebFrontToBack.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\WebFrontToBack.csproj",
         "projectName": "WebFrontToBack",
-        "projectPath": "/Users/narmin/Documents/AB201/WebFrontToBack/WebFrontToBack.csproj",
-        "packagesPath": "/Users/narmin/.nuget/packages/",
-        "outputPath": "/Users/narmin/Documents/AB201/WebFrontToBack/obj/",
+        "projectPath": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\WebFrontToBack.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/narmin/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -26,9 +26,6 @@
     <None Remove="Areas\Admin\Views\Category\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Admin\" />
-    <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Views\Home\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="wwwroot\admin\" />
