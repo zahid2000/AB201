@@ -41,7 +41,6 @@ namespace WebFrontToBack.Areas.Admin.Controllers
             {
                 return View();
             }
-            
             bool isExists = await _context.Categories.AnyAsync(c =>
             c.Name.ToLower().Trim() == category.Name.ToLower().Trim());
 
