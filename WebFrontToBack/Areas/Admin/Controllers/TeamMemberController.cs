@@ -24,8 +24,6 @@ namespace WebFrontToBack.Areas.Admin.Controllers
             ICollection<TeamMember> members = await _context.TeamMembers.ToListAsync();
             return View(members);
         }
-
-
         public IActionResult Create()
         {
             return View();
@@ -46,11 +44,11 @@ namespace WebFrontToBack.Areas.Admin.Controllers
             }
             if (!member.Photo.CheckFileSize(200))
             {
-                ModelState.AddModelError("Photo", $"{member.Photo.FileName} - file type must be size less than 200kb");
+                ModelState.AddModelError("Photo", $"{member.Photo.FileName} - {Messages.FileSizeMustBe200KB}");
                 return View();
             }
+           
             string root = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img");
-
             string fileName = await member.Photo.SaveAsync(root);
             TeamMember teamMember = new TeamMember()
             {

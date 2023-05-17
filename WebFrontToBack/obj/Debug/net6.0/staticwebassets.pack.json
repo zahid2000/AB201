@@ -133,6 +133,10 @@
       "PackagePath": "staticwebassets\\admin\\images\\faces\\New Text Document.txt"
     },
     {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face1 - Copy.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face1 - Copy.jpg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face1.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face1.jpg"
     },
@@ -213,6 +217,10 @@
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face27.jpg"
     },
     {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face3 - Copy.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face3 - Copy.jpg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face3.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face3.jpg"
     },
@@ -227,6 +235,10 @@
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face6.jpg",
       "PackagePath": "staticwebassets\\admin\\images\\faces\\face6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face7 - Copy.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\faces\\face7 - Copy.jpg"
     },
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\admin\\images\\faces\\face7.jpg",
@@ -625,12 +637,20 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\boxicons.woff2"
     },
     {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\0adcf6ce-daab-4754-ac71-c96a58f99a17face2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\0adcf6ce-daab-4754-ac71-c96a58f99a17face2.jpg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\2a65aaba-3120-4c9d-8ace-d71010a4dfceface3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\2a65aaba-3120-4c9d-8ace-d71010a4dfceface3.jpg"
     },
     {
-      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\8b9cff69-ac04-478a-9554-0f720ddd7a80face8.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\8b9cff69-ac04-478a-9554-0f720ddd7a80face8.jpg"
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\4eb71ad4-616d-4542-bef6-aa47434d6de0face1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\4eb71ad4-616d-4542-bef6-aa47434d6de0face1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\561a2ebb-5d39-4392-a040-af513458a414face22.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\561a2ebb-5d39-4392-a040-af513458a414face22.jpg"
     },
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\9843a9ac-cec3-459b-a824-945ba423b858face8.jpg",
@@ -641,8 +661,16 @@
       "PackagePath": "staticwebassets\\assets\\img\\New Text Document.txt"
     },
     {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\a5805300-ec78-4fa3-86f6-d67c21515a0cface26.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\a5805300-ec78-4fa3-86f6-d67c21515a0cface26.jpg"
+    },
+    {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\apple-icon.png",
       "PackagePath": "staticwebassets\\assets\\img\\apple-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\b4822779-90d8-490f-b9ff-07634c8d23c8face27.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b4822779-90d8-490f-b9ff-07634c8d23c8face27.jpg"
     },
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\banner-bg-02.jpg",
@@ -659,6 +687,10 @@
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\banner-img-02.svg",
       "PackagePath": "staticwebassets\\assets\\img\\banner-img-02.svg"
+    },
+    {
+      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\e7cab5ed-78b6-4542-b374-44601e46e8f8face3 - Copy.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\e7cab5ed-78b6-4542-b374-44601e46e8f8face3 - Copy.jpg"
     },
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\favicon.ico",
@@ -819,14 +851,6 @@
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\team-04.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team-04.jpg"
-    },
-    {
-      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\team-05.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\team-05.jpg"
-    },
-    {
-      "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\team-06.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\team-06.jpg"
     },
     {
       "Id": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\img\\work-slide-01-small.jpg",

@@ -1,11 +1,11 @@
-﻿@model List<TeamMember>
+﻿@model List<Service>
 @{
-    ViewData["Title"] = "TeamMembers";
-    int count = 1;
+    ViewData["Title"] = "Services";
+    int count=1;
 }
 
 <div class="d-flex justify-content-end mb-2">
-    <a class="btn btn-success text-light" asp-area="Admin" asp-controller="TeamMember" asp-action="Create">Create Member</a>
+    <a class="btn btn-success text-light" asp-area="Admin" asp-controller="Services" asp-action="Create">Create Member</a>
 </div>
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
@@ -18,38 +18,50 @@
                                 Number
                             </th>
                             <th>
-                                Full Name
+                                Name
                             </th>
                             <th>
-                               Profession
+                                Description
                             </th>
                             <th>
-                              Image
+                                Category
+                            </th>
+                            <th>
+                                Price
+                            </th>
+                            <th>
+                                Image
                             </th>
 
                         </tr>
                     </thead>
                     <tbody>
 
-                        @foreach (TeamMember item in Model)
+                        @foreach (Service item in Model)
                         {
                             <tr>
                                 <td> @count</td>
 
                                 <td>
-                                    @item.FullName
+                                    @item.Name
                                 </td>
                                 <td>
-                                    @item.Profession
+                                    @item.Description
                                 </td>
                                 <td>
-                                    <img src="~/assets/img/@item.ImagePath" style="height:150px; width:150px;"></img>
+                                    @item.Category.Name
                                 </td>
                                 <td>
-                                    <a class="btn btn-warning text-light" asp-area="Admin" asp-controller="TeamMember" asp-action="Update" asp-route-Id="@item.Id">
+                                    @item.Price
+                                </td>
+                                <td>
+                                    <img src="~/assets/img/@item.ServiceImages.FirstOrDefault(s=>s.IsActive).Path" style="height:100px; width:100px;"></img>
+                                </td>
+                                <td>
+                                    <a class="btn btn-warning text-light" asp-area="Admin" asp-controller="Services" asp-action="Update" asp-route-Id="@item.Id">
                                         <i class="mdi mdi-grease-pencil"></i>
                                     </a>
-                                    <a class="btn btn-danger text-light" asp-area="Admin" asp-controller="TeamMember" asp-action="Delete" asp-route-Id="@item.Id">
+                                    <a class="btn btn-danger text-light" asp-area="Admin" asp-controller="Services" asp-action="Delete" asp-route-Id="@item.Id">
                                         <i class="mdi mdi-delete-forever"></i>
                                     </a>
                                 </td>
@@ -75,3 +87,4 @@
         </div>
     </div>
 </div>
+
