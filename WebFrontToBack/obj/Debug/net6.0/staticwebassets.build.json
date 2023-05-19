@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Bzw1lQS/DNGgfoljJetvhTqvooDt/9BPSeUdi2ifOdc=",
+  "Hash": "6cHeHFZmcb7IBkb0bMuK+Hw0RLRjGgFty2bWbO1+4II=",
   "Source": "WebFrontToBack",
   "BasePath": "_content/WebFrontToBack",
   "Mode": "Default",
@@ -2633,6 +2633,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\css\\templatemo.css"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\font-awesome\\css\\all.min.css",
+      "SourceId": "WebFrontToBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\",
+      "BasePath": "_content/WebFrontToBack",
+      "RelativePath": "assets/font-awesome/css/all.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\font-awesome\\css\\all.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\font-awesome\\js\\all.min.js",
+      "SourceId": "WebFrontToBack",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\",
+      "BasePath": "_content/WebFrontToBack",
+      "RelativePath": "assets/font-awesome/js/all.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\font-awesome\\js\\all.min.js"
     },
     {
       "Identity": "C:\\Users\\lenovo\\Desktop\\Code_Academy\\Aztu\\AB201\\WebFrontToBack\\wwwroot\\assets\\fonts\\boxicons.eot",

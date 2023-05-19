@@ -800,3 +800,4 @@ C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebFrontToBack\obj\Debug\net6.0\
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebFrontToBack\obj\Debug\net6.0\WebFrontToBack.pdb
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebFrontToBack\obj\Debug\net6.0\WebFrontToBack.genruntimeconfig.cache
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebFrontToBack\obj\Debug\net6.0\ref\WebFrontToBack.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebFrontToBack\bin\Debug\net6.0\libman.json

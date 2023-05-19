@@ -1,6 +1,6 @@
 let dbServiceCount = $("#dbServiceCount").val()
 
-$("#btnLoadMore").on("click", () => {
+$("#btnLoadMore").on("click", () =>{
     let serviceCount = $("#services").children().length
     console.log(serviceCount)
     //fetch("/Services/LoadMore",{
@@ -19,7 +19,7 @@ $("#btnLoadMore").on("click", () => {
         method: "GET",
         data: {
             skip: serviceCount,
-            take:8
+            take:10
         },
         success: (data) => {
             $("#services").append(data)

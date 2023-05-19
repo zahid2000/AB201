@@ -9,6 +9,10 @@ namespace WebFrontToBack
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSession(opt =>
+            {
+                opt.IdleTimeout = TimeSpan.FromSeconds(10);
+            });
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
                 //options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
@@ -20,6 +24,7 @@ namespace WebFrontToBack
             //{
             //    app.UseExceptionHandler("Home/Error");
             //}
+            app.UseSession();
             app.UseStaticFiles();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
@@ -27,7 +32,7 @@ namespace WebFrontToBack
                 endpoints.MapControllerRoute(
                 name: "areas",
                 pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-   
+
                 endpoints.MapDefaultControllerRoute();
             });
 

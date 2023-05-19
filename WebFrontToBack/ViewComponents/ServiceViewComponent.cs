@@ -14,12 +14,13 @@ namespace WebFrontToBack.ViewComponents
             _context = context;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync()
+        public async Task<IViewComponentResult> InvokeAsync(int skip =0,int take=8)
         {
             List<Service> services=await _context.Services
                                                  .Where(s=>!s.IsDeleted)
                                                  .OrderByDescending(s=>s.Id)
-                                                 .Take(8)
+                                                 .Skip(skip)
+                                                 .Take(take)
                                                  .Include(s=>s.Category)
                                                  .Include(s=>s.ServiceImages)
                                                  .ToListAsync();
