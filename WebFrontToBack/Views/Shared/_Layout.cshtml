@@ -48,7 +48,7 @@
                             <a class="nav-link btn-outline-primary rounded-pill px-3" asp-controller="About" asp-action="Index">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-primary rounded-pill px-3 "asp-controller="Services" asp-action="Index">Services</a>
+                            <a class="nav-link btn-outline-primary rounded-pill px-3 " asp-controller="Services" asp-action="Index">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="pricing.html">Pricing</a>
@@ -56,12 +56,34 @@
                         <li class="nav-item">
                             <a class="nav-link btn-outline-primary rounded-pill px-3" href="contact.html">Contact</a>
                         </li>
+
                     </ul>
                 </div>
                 <div class="navbar align-self-center d-flex">
                     <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
                     <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                    <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-user-circle bx-sm text-primary'></i>
+                        </button>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">@User.Identity.Name</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="LogOut">Log Out</a></li>
+                            </ul>
+                        }
+                        else
+                        {
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Log In</a></li>
+                            </ul>
+                        }
+                    </div>
+
+
+
                     <a class="nav-link" asp-controller="Basket" asp-action="index"><i class="fs-5 fa-solid fa-cart-shopping "></i></a>
                 </div>
             </div>
@@ -110,6 +132,7 @@
                                 <i class='bx bxl-medium-square bx-md'></i>
                             </a>
                         </li>
+
                     </ul>
                 </div>
 
@@ -201,13 +224,13 @@
     <script src="~/assets/js/isotope.pkgd.js"></script>
     <!-- Page Script -->
     <script>
-        $(window).load(function() {
+        $(window).load(function () {
             // init Isotope
             var $projects = $('.projects').isotope({
                 itemSelector: '.project',
                 layoutMode: 'fitRows'
             });
-            $(".filter-btn").click(function() {
+            $(".filter-btn").click(function () {
                 var data_filter = $(this).attr("data-filter");
                 $projects.isotope({
                     filter: data_filter
