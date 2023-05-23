@@ -77,7 +77,7 @@
                         else
                         {
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Login">Log In</a></li>
+                                <li><a class="dropdown-item" asp-controller="Account" asp-action="Login" asp-route-ReturnUrl="@Context.Request.Path.Value">Log In</a></li>
                             </ul>
                         }
                     </div>

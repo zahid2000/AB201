@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebFrontToBack.Areas.Admin.ViewModels;
 using WebFrontToBack.DAL;
@@ -21,20 +22,38 @@ public class ServicesController : Controller
         _enviroment = enviroment;
     }
 
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int page=1,int take=8)
     {
-        return View(
-
-            await _context.Services
+        List<Service> services = await _context.Services
             .Where(s => !s.IsDeleted)
             .OrderByDescending(s => s.Id)
-            .Take(8)
+            .Skip((page - 1) * take)
+            .Take(take)
             .Include(s => s.Category)
             .Include(s => s.ServiceImages)
-            .ToListAsync()
-            );
+            .ToListAsync();
+        int pageCount = await GetPageCount(take);
+
+        PaginateVM<Service> model = new PaginateVM<Service>
+        {
+            Data = services,
+            CurrentPage = page,
+            PageCount = pageCount,
+            HasNext = page < pageCount,
+            HasPreview = page > 1,
+            Take=take
+        };
+
+        return View(model);
     }
 
+    private async Task<int> GetPageCount(int take)
+    {
+        int serviceCount=await _context.Services.CountAsync();
+        return (int)Math.Ceiling((double)serviceCount / take);
+    }
+
+    [Authorize(Roles = "Admin")]
     public async Task<IActionResult> Create()
     {
         CreateServiceVm createServiceVm = new CreateServiceVm()
@@ -43,8 +62,10 @@ public class ServicesController : Controller
         };
         return View(createServiceVm);
     }
+    [Authorize(Roles = "Admin")]
     [HttpPost]
     [ValidateAntiForgeryToken]
+  
     public async Task<IActionResult> Create(CreateServiceVm serviceVm)
     {
         serviceVm.Categories = _categories;

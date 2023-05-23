@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 using WebFrontToBack.Areas.Admin.ViewModels;
 using WebFrontToBack.DAL;
 using WebFrontToBack.Models;
@@ -9,6 +11,7 @@ using WebFrontToBack.Utilities.Extensions;
 namespace WebFrontToBack.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin,User")]
     public class TeamMemberController : Controller
     {
         private readonly AppDbContext _context;

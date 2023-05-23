@@ -9,11 +9,14 @@ namespace WebFrontToBack.Controllers
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager)
+
+        public AccountController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
         }
 
         public IActionResult Register()
@@ -35,6 +38,15 @@ namespace WebFrontToBack.Controllers
             if (!registerResult.Succeeded)
             {
                 foreach (IdentityError error in registerResult.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+                return View(registerVM);
+            }
+         IdentityResult roleResult=await   _userManager.AddToRoleAsync(newUser, UserRoles.User.ToString());
+            if (!roleResult.Succeeded)
+            {
+                foreach (IdentityError error in roleResult.Errors)
                 {
                     ModelState.AddModelError("", error.Description);
                 }
@@ -79,6 +91,28 @@ namespace WebFrontToBack.Controllers
             await _signInManager.SignOutAsync();
 
             return RedirectToAction("Index", "Home");
+        }
+
+        //public async Task<IActionResult> AddRoles()
+        //{
+        //    foreach (var role in Enum.GetValues(typeof(UserRoles)))
+        //    {
+        //        if (!await _roleManager.RoleExistsAsync(role.ToString()))
+        //        {
+        //            await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+        //        }
+        //    }
+        //    return Json("Ok");
+        //}
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+       public enum UserRoles
+        {
+            Admin,
+            User,
+            Moderator
         }
     }
 }

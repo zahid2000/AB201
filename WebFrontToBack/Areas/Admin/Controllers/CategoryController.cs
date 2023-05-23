@@ -8,13 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using NuGet.Versioning;
 using WebFrontToBack.DAL;
 using WebFrontToBack.Models;
+using static WebFrontToBack.Controllers.AccountController;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebFrontToBack.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize]
+    [Authorize(Roles ="Admin,Moderator")]
     public class CategoryController : Controller
     {
         private readonly AppDbContext _context;
@@ -23,7 +24,7 @@ namespace WebFrontToBack.Areas.Admin.Controllers
         {
             _context = context;
         }
-
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             ICollection<Category> categories = await _context.Categories.ToListAsync();

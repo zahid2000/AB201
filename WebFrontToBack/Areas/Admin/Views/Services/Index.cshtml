@@ -1,9 +1,21 @@
-﻿@model List<Service>
+﻿@model PaginateVM<Service>
 @{
     ViewData["Title"] = "Services";
-    int count=1;
+    int count=((Model.CurrentPage-1)*Model.Take)+1;
 }
 
+<div class="container w-25">
+  <form method="post" asp-area="Admin" asp-controller="Services" asp-action="Index">
+       <div class="input-group">
+            <select asp-for="Take" class=" form-select">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="50">50</option>
+            </select>
+            <button type="submit" class="btn btn-sm btn-outline-warning">Get Data</button>
+       </div>
+  </form>
+</div>
 <div class="d-flex justify-content-end mb-2">
     <a class="btn btn-success text-light" asp-area="Admin" asp-controller="Services" asp-action="Create">Create Member</a>
 </div>
@@ -37,7 +49,7 @@
                     </thead>
                     <tbody>
 
-                        @foreach (Service item in Model)
+                        @foreach (Service item in Model.Data)
                         {
                             <tr>
                                 <td> @count</td>
@@ -69,22 +81,26 @@
                             count++;
                         }
 
-                        @*<td>
-                        <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        </td>
-                        <td>
-                        $ 77.99
-                        </td>
-                        <td>
-                        May 15, 2015
-                        </td>*@
-
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+   
 </div>
-
+<div class="container d-flex justify-content-center">
+    <ul class="pagination">
+        <li class="page-item @(Model.HasPreview?"":"disabled")">
+            <a class="page-link" asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-page="@(@Model.CurrentPage-1)" asp-route-take="@Model.Take">Previous</a>
+        </li>
+       @for (int i=1;i<=Model.PageCount;i++)
+        {
+            <li class="page-item @(@i==Model.CurrentPage?"active":"")" aria-current="page">
+                <a class="page-link" asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-page="@i" asp-route-take="@Model.Take">@i</a>
+            </li>
+        }
+        <li class="page-item @(Model.HasNext ? "" : "disabled")">
+            <a class="page-link" asp-area="Admin" asp-controller="Services" asp-action="Index" asp-route-page="@(@Model.CurrentPage+1)" asp-route-take="@Model.Take">Next</a>
+        </li>
+    </ul>
+</div>
