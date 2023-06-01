@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebFrontToBack.DAL;
 using WebFrontToBack.Models.Auth;
+using WebFrontToBack.Services;
 
 namespace WebFrontToBack
 {
@@ -58,6 +59,7 @@ namespace WebFrontToBack
                 options.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]);
 
             });
+            builder.Services.AddScoped<LayoutService>();
             var app = builder.Build();
             //if (!app.Environment.IsDevelopment())
             //{

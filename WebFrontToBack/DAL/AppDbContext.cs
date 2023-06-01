@@ -18,5 +18,6 @@ public class AppDbContext : IdentityDbContext<AppUser>
     public DbSet<Service> Services { get; set; }
     public DbSet<ServiceImage> ServiceImages { get; set; }
     public DbSet<TeamMember> TeamMembers { get; set; }
+    public DbSet<Setting> Settings { get; set; }
 
 }
