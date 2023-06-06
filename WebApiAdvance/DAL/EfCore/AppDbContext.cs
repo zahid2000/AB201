@@ -1,15 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.Reflection;
 using WebApiAdvance.Entities;
+using WebApiAdvance.Entities.Auth;
 
 namespace WebApiAdvance.DAL.EfCore;
 
-public class AppDbContext : DbContext
+public class AppDbContext : IdentityDbContext<AppUser>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        #region Configurations
         //modelBuilder.Entity<Product>()
         //            .Property(p => p.Price)
         //            .IsRequired()
@@ -24,7 +27,8 @@ public class AppDbContext : DbContext
         //    .Property(b => b.Name)
         //    .HasMaxLength(100)
         //    .HasColumnType(SqlDbType.NText.ToString())
-        //.HasDefaultValue("XXXX");
+        //.HasDefaultValue("XXXX"); 
+        #endregion
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         base.OnModelCreating(modelBuilder);
