@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WebApiAdvance.DAL.EfCore;
+using WebApiAdvance.Core.DAL.Repositories.Abstracts;
+using WebApiAdvance.DAL.Repositories.Abstracts;
+using WebApiAdvance.DAL.UnitOfWork.Abstracts;
 using WebApiAdvance.Entities;
 using WebApiAdvance.Entities.Dtos.Products;
 
@@ -17,25 +13,25 @@ namespace WebApiAdvance.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public ProductsController(AppDbContext context, IMapper mapper)
+        public ProductsController(IMapper mapper, IUnitOfWork unitOfWork)
         {
-            _context = context;
             _mapper = mapper;
+            _unitOfWork = unitOfWork;
         }
 
         // GET: api/Products
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GetProductDto>>> GetProducts()
         {
-          if (_context.Products == null)
-          {
-              return NotFound();
-          }
-            var result = await _context.Products.ToListAsync();
-            List<GetProductDto> getProductDtos=_mapper.Map<List<GetProductDto>>(result);
+            if (await _unitOfWork.ProductRepository.GetAllAsync() == null)
+            {
+                return NotFound();
+            }
+            var result = await _unitOfWork.ProductRepository.GetAllAsync(includes:"Brand");
+            List<GetProductDto> getProductDtos = _mapper.Map<List<GetProductDto>>(result);
 
             return getProductDtos;
         }
@@ -44,11 +40,11 @@ namespace WebApiAdvance.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<GetProductDto>> GetProduct(int id)
         {
-          if (_context.Products == null)
-          {
-              return NotFound();
-          }
-            var product = await _context.Products.FindAsync(id);
+            if (await _unitOfWork.ProductRepository.GetAllAsync() == null)
+            {
+                return NotFound();
+            }
+            var product = await _unitOfWork.ProductRepository.GetAsync(p => p.Id == id);
 
             if (product == null)
             {
@@ -63,28 +59,28 @@ namespace WebApiAdvance.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, UpdateProductDto productdto)
         {
-            if (!ProductExists(id))
+            if (! await ProductExists(id))
             {
                 return NotFound();
             }
             Product product = _mapper.Map<Product>(productdto);
             product.ProductCode = "TEst";
-            _context.Products.Update(product);
-            await _context.SaveChangesAsync();
+             _unitOfWork.ProductRepository.Update(product);
+            await _unitOfWork.SaveAsync();
             return NoContent();
         }
 
         // POST: api/Products
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        [Authorize(Roles ="admin")]
-        public async Task<ActionResult> PostProduct([FromBody]CreateProductDto productdto)
+        [Authorize]
+        public async Task<ActionResult> PostProduct([FromBody] CreateProductDto productdto)
         {
-            Product product=_mapper.Map<Product>(productdto);
-            product.Created= DateTime.UtcNow;
-            product.ProductCode = product.Name.Substring(0,2);
-            await _context.Products.AddAsync(product);
-            await _context.SaveChangesAsync();
+            Product product = _mapper.Map<Product>(productdto);
+            product.Created = DateTime.UtcNow;
+            product.ProductCode = product.Name.Substring(0, 2);
+            await _unitOfWork.ProductRepository.AddAsync(product);
+            await _unitOfWork.SaveAsync();
             return NoContent();
         }
 
@@ -92,25 +88,25 @@ namespace WebApiAdvance.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
-            if (_context.Products == null)
+            if ( await _unitOfWork.ProductRepository.GetAllAsync() == null)
             {
                 return NotFound();
             }
-            var product = await _context.Products.FindAsync(id);
+            var product = await _unitOfWork.ProductRepository.GetAsync(p => p.Id == id);
             if (product == null)
             {
                 return NotFound();
             }
 
-            _context.Products.Remove(product);
-            await _context.SaveChangesAsync();
+             _unitOfWork.ProductRepository.Delete(product);
+            await _unitOfWork.SaveAsync();
 
             return NoContent();
         }
 
-        private bool ProductExists(int id)
+        private async Task<bool> ProductExists(int id)
         {
-            return (_context.Products?.Any(e => e.Id == id)).GetValueOrDefault();
+            return await _unitOfWork.ProductRepository.IsExistsAsync(p=>p.Id==id);
         }
     }
 }

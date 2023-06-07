@@ -281,3 +281,6 @@ C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\obj\Debug\net6.0\W
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\obj\Debug\net6.0\WebApiAdvance.genruntimeconfig.cache
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\obj\Debug\net6.0\ref\WebApiAdvance.dll
 C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\lenovo\Desktop\Code_Academy\Aztu\AB201\WebApiAdvance\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
